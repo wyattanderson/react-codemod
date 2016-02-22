@@ -20,6 +20,7 @@ var CORE_PROPERTIES = [
   'createClass',
   'createFactory',
   'createMixin',
+  'addons',
   'DOM',
   '__spread',
 ];
@@ -61,6 +62,7 @@ module.exports = function(file, api) {
   [
     ['React', 'ReactDOM', 'ReactDOMServer'],
     ['react', 'react-dom', 'react-dom/server'],
+    ['react/addons', 'react-dom', 'react-dom/server'],
   ].forEach(function(pair) {
     var coreModuleName = pair[0];
     var domModuleName = pair[1];
